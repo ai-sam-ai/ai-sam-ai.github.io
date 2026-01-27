@@ -1,0 +1,96 @@
+# SAM AI - Master Resource Index
+
+> AI-powered business automation platform built on Odoo 18.
+> This file helps AI assistants navigate the SAM AI ecosystem.
+
+## Quick Start
+
+**What is SAM AI?**
+SAM (Smart Automation Manager) is an AI-powered business automation platform that helps small businesses operate more efficiently. Built on Odoo 18, it combines intelligent chat interfaces, workflow automation, and modular business tools.
+
+**Navigation Guide:**
+1. Start here (llms.txt) for ecosystem overview
+2. Go to /insights/llms.txt for technical documentation
+3. Go to /agents/llms.txt for agent configurations
+
+## Resource Map
+
+| Resource | URL | Purpose |
+|----------|-----|---------|
+| Master Hub | https://ai-sam-ai.github.io/ | This page - central navigation |
+| Documentation | https://ai-sam-ai.github.io/insights/ | Technical docs, architecture |
+| Agent Registry | https://ai-sam-ai.github.io/agents/ | AI agent definitions |
+| Human Docs | https://sme.ec/documentation | Styled docs for humans |
+
+## For Technical Questions
+
+**Fetch:** https://ai-sam-ai.github.io/insights/llms.txt
+
+Topics covered:
+- Module documentation (18+ Odoo modules)
+- Architecture and data flows
+- API specifications
+- Development guides
+- System prompts and prompt engineering
+
+**Key modules:**
+- `ai_sam` - Core chat interface
+- `ai_sam_base` - Backend infrastructure
+- `ai_sam_workflows` - N8N-style workflow automation
+- `ai_sam_intelligence` - Agent registry and documentation intelligence
+
+## For Agent Configuration
+
+**Fetch:** https://ai-sam-ai.github.io/agents/index.json
+
+Available agents:
+- `sales-agent` (active) - Landing page sales conversations
+- `support-agent` (planned) - Client support
+- `onboarding-agent` (planned) - New client onboarding
+
+**Loading pattern:**
+1. Fetch /agents/index.json for registry
+2. Match user context to agent triggers
+3. Load full config from /agents/{id}/agent.json
+4. Load knowledge files as needed
+
+## Key Endpoints
+
+### Documentation
+- `/insights/` - Documentation home
+- `/insights/llms.txt` - AI navigation guide
+- `/insights/docs/04_modules/` - Module reference
+- `/insights/docs/05_how_sam_works/` - Architecture
+
+### Agents
+- `/agents/` - Agent registry home
+- `/agents/index.json` - Machine-readable registry
+- `/agents/llms.txt` - AI navigation guide
+- `/agents/sales-agent/agent.json` - Sales agent config
+
+## Platform Overview
+
+**Stack:**
+- Backend: Odoo 18 (Python)
+- Frontend: OWL Framework (Odoo Web Library)
+- AI: Claude API integration
+- Workflows: N8N-style visual automation
+- Deployment: Docker-based SaaS
+
+**Core Capabilities:**
+- Intelligent chat interfaces embedded in business workflows
+- Visual workflow builder with AI-powered nodes
+- Multi-tenant SaaS architecture
+- Modular addon system
+
+## Company
+
+- **Name:** SME Business Support Ltd
+- **Website:** https://sme.ec
+- **Contact:** sam@sme.ec
+- **GitHub:** https://github.com/ai-sam-ai
+
+---
+
+*Last updated: 2026-01-27*
+*Source: https://github.com/ai-sam-ai/ai-sam-ai.github.io*

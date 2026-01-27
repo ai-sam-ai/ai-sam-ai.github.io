@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAM AI - AI-Powered Business Automation</title>
+    <meta name="description" content="SAM AI transforms how small businesses operate with intelligent automation built on Odoo 18.">
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        header p {
+            font-size: 1.25rem;
+            opacity: 0.9;
+        }
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        .card a {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .card a:hover {
+            background: #5a6fd6;
+        }
+        .ai-section {
+            background: rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            color: white;
+        }
+        .ai-section h3 {
+            margin-bottom: 0.5rem;
+        }
+        .ai-section code {
+            background: rgba(255,255,255,0.2);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+        }
+        .ai-section a {
+            color: #ffd700;
+        }
+        .endpoints {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .endpoint {
+            background: rgba(255,255,255,0.15);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+        .endpoint a {
+            color: white;
+            text-decoration: none;
+        }
+        .endpoint a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: rgba(255,255,255,0.9);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SAM AI</h1>
+            <p>AI-Powered Business Automation on Odoo 18</p>
+        </header>
+
+        <div class="card-grid">
+            <div class="card">
+                <h2>Documentation</h2>
+                <p>Technical docs, architecture guides, and module references for developers and AI assistants.</p>
+                <a href="/insights/">Browse Docs</a>
+            </div>
+
+            <div class="card">
+                <h2>Agent Registry</h2>
+                <p>AI agent definitions powering SAM's conversational interfaces - sales, support, onboarding.</p>
+                <a href="/agents/">View Agents</a>
+            </div>
+
+            <div class="card">
+                <h2>Human-Friendly Docs</h2>
+                <p>Styled, searchable documentation with better navigation for humans.</p>
+                <a href="https://sme.ec/documentation">Visit sme.ec</a>
+            </div>
+
+            <div class="card">
+                <h2>GitHub</h2>
+                <p>Source code, issue tracking, and contributions for the SAM AI ecosystem.</p>
+                <a href="https://github.com/ai-sam-ai">View Repos</a>
+            </div>
+        </div>
+
+        <div class="ai-section">
+            <h3>For AI Assistants</h3>
+            <p>Start with <a href="llms.txt">llms.txt</a> for a structured overview of all SAM AI resources.</p>
+            <div class="endpoints">
+                <div class="endpoint"><a href="llms.txt">llms.txt</a> (master index)</div>
+                <div class="endpoint"><a href="/insights/llms.txt">/insights/llms.txt</a></div>
+                <div class="endpoint"><a href="/agents/llms.txt">/agents/llms.txt</a></div>
+                <div class="endpoint"><a href="/agents/index.json">/agents/index.json</a></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Built with care by the SAM AI team</p>
+            <p><a href="https://sme.ec">sme.ec</a> | <a href="https://github.com/ai-sam-ai">GitHub</a></p>
+        </footer>
+    </div>
+</body>
+</html>
