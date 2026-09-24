@@ -108,11 +108,11 @@ ai_sam_base is the **minimal foundation module** for SAM AI - the Strategic Auto
 
 2. **Model name preserved for compatibility** - `ai_brain.py` defines model `ai.service` (not `ai.brain`) for backward compatibility with existing code.
 
-3. **Provider population on init()** - `api.service.provider.init()` auto-populates vendor templates from `node_metadata.json`. If templates missing, check VendorPopulationService.
+3. **No automatic provider/vendor population** - `api.service.provider` (and its `init()` auto-population of vendor templates from `node_metadata.json`) was DELETED in Phase 15 and never replaced. `post_init_hook` does NOT seed AI provider/vendor templates - setting up a provider is a manual step via Settings > General Settings > SAM AI. Don't go looking for a `VendorPopulationService` to fix; there isn't one anymore. (Corrected 2026-09-24 — this file previously described a feature that no longer exists.)
 
 4. **No UI in this module** - This is data layer ONLY. All views/templates/menus are in `ai_sam` module. Don't add views here.
 
-5. **post_init_hook required** - Vendor population MUST fire from ai_sam_base (not ai_sam) so it runs on upgrade.
+5. **post_init_hook required** - It MUST fire from ai_sam_base (not ai_sam) so its install/upgrade housekeeping (company-id migration, mode registry refresh, model-route seeding) runs on upgrade — see point 3, this is NOT vendor population.
 
 ---
 
